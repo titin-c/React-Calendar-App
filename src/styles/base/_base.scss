@@ -1,0 +1,31 @@
+html, body, div#root, div#root > div {
+    height: 100vh;
+    width: 100vw;
+}
+
+div#root > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background: #5f527c;
+    background: -moz-radial-gradient(center, ellipse cover,  #5f527c 0%, #48437c 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  #5f527c 0%,#48437c 100%);
+    background: radial-gradient(ellipse at center,  #5f527c 0%,#48437c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f527c', endColorstr='#48437c',GradientType=1 );
+
+    color:#fff;
+
+}
+.mr-2{margin-right: 10px;}
+.form-group {
+    margin-bottom: 10px;
+  }
+
+
+
+

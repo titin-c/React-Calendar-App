@@ -1,0 +1,70 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    left: 0;
+    top:0;
+    padding: .5rem;
+}
+.calendar-screen {
+    display: flex;
+    flex-flow: column;
+    height: 93vh;
+    padding-top: 7vh;
+    width: 99%;
+}
+
+.rbc-calendar {
+    height: 100%;
+}
+.rbc-toolbar{
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .rbc-toolbar span {
+    display: block !important;
+    float: none;
+    width: 100%;
+    margin: 5px auto;
+  }}
+  .rbc-toolbar button{
+      background-color: rgba($dark, .1);
+      color:#fff;
+      border: solid 1px rgba($dark, .1);
+      
+      -webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-ms-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+  }
+  .rbc-toolbar button:active, .rbc-toolbar button.rbc-active {
+    background-color: rgba($light, .2);
+    color:$light;
+  }
+  .rbc-day-bg + .rbc-day-bg {
+    border-left: 1px solid rgba($light, .2);
+  }
+  .rbc-off-range-bg {
+    background: rgba($dark, .2);
+  }
+  .rbc-today {
+    background-color: rgba($light, .3);
+  }
+  
+  .btn-light {
+    color: #4c457c;
+}
+    .btn-check:focus + .btn-primary, .btn-primary:focus {
+        color: #fff;
+        background-color: $primary;
+        border-color: $primary;
+        box-shadow: 0 0 0 0.25rem rgba($primary, 0.5);
+      }
+      .rbc-event.rbc-selected, .rbc-day-slot .rbc-selected.rbc-background-event {
+        box-shadow: 0 0 0 0.25rem rgba($primary, 0.5);
+        outline: 5px auto $primary;
+      }
